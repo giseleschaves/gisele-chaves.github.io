@@ -21,6 +21,61 @@ body {
   padding: 0px;
   font-family: 'Roboto', sans-serif;
 }
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  max-width: 1200px;
+}
+
+#secundary-header {
+  /*background: #fff; */
+  display: flex;
+  font-size: 14px;
+  height: 70px;
+  border: 1px solid #dfdfe5;
+  padding-left: 5px;
+  /* to fix the secundary header on the top when scrolling, it doesn't work if the div is inside of header tag */
+  position: sticky;
+  top: 0;
+  /* understand better how to define the shadow only on the bottom*/
+  box-shadow: 1px 1px 5px 0.1px #dadce0;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+#secundary-header div {
+  margin: auto;
+}
+#secundary-header span {
+  font-weight: 900;
+}
+
+#secundary-header a {
+  text-decoration: none;
+  color: #000;
+}
+#secundary-header a:hover {
+  text-decoration: underline;
+}
+
+#secundary-options {
+  border-left: 1px solid #dfdfe5;
+  padding-left: 10px;
+}
+
+#secundary-options li {
+  display: inline;
+  padding: 5px;
+}
+
+#secundary-options li:nth-child(1) span {
+  font-weight: bold;
+  color: #d0021b; /*smae color of latest updates */
+  font-weight: 900;
+  font-size: 12px;
+}
 #blog {
   display: flex;
   justify-content: center;
@@ -35,6 +90,12 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.img-responsive {
+  max-width: 100%;
+  max-height: 50px;
+  height: auto;
 }
 
 @media (max-width: 1250px) {
