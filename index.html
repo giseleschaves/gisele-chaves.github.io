@@ -6,47 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./blog/styles/main.css" type="text/css" />
   </head>
   <body>
     <header>
       <div id="main-header">
-        <a href=""
+        <a href="index.html"
           ><img
             src="./blog/images/brandmark_white_pattern.png"
             class="img-responsive"
             alt="dev academy
           logo"
         /></a>
-        <a href="index.html"><span>My Blog</span></a>
+        <a href="about.html"><span>About</span></a>
       </div>
     </header>
     <div id="secundary-header">
-      <!--div>
-        <a href="index.html"><span>My Blog > </span></a>
-      </div-->
-      <div id="secundary-options">
-        <ul>
-          <li><a href="./blog/sprint-2.html">Sprint 2</a></li>
-          <li><a href="">HTML</a></li>
-          <li><a href="">CSS</a></li>
-          <li><a href="">Java Script</a></li>
-          <li><a href="./blog/emotional-intelligence.html">EI</a></li>
-        </ul>
+      <div class="secondary-bar">
+        <a href="index.html">Home</a>
+        <a href="./blog/te-houtaewa-template.html">Te Houtaewa</a>
+        <div class="dropdown">
+          <button class="dropbtn">Core</button>
+          <div class="dropdown-content">
+            <a href="./blog/identity-values.html"
+              >Identity, Values and Strategies</a
+            >
+            <a href="./blog/learning-plan.html">Your Learning Plan</a>
+            <a href="./blog/emotional-intelligence.html"
+              >Emotional Intelligence Exploration</a
+            >
+            <a href="./blog/neuro-growth.html"
+              >Neuroplasticity and Growth Mindset</a
+            >
+            <a href="./blog/te-whare-tapa-wha.html">Te Whare Tapa Whā</a>
+            <a href="./blog/reassess-learning-plan.html"
+              >Reassess your Learning Plan</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Tech</button>
+          <div class="dropdown-content">
+            <a href="./blog/html-css.html">Classes vs Ids</a>
+            <a href="./blog/javascript-dom.html">JS Fundamentals</a>
+            <a href="./blog/problem-solving.html">Problem Solving</a>
+          </div>
+        </div>
       </div>
     </div>
     <main>
       <section id="blog">
-        <div class="blog-heading">
+        <div>
           <span>My Recent Posts</span>
         </div>
-        <div class="container">
+        <div>
           <div class="box">
-            <a href="#">The Story of Te Houtaewa</a>
+            <img src="./blog/images/brett-jordan-D44kHt8Ex14-unsplash.jpg" />
+            <h3>Emotional Intelligence Exploration</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse non nisl at risus dapibus laoreet id id mauris. Aenean
+              sodales a purus non gravida. Aenean egestas, risus a scelerisque
+              commodo, risus turpis bibendum arcu, bibendum vulputate mi orci
+              sit amet lacus. Duis nec accumsan est, vitae scelerisque augue.
+            </p>
+            <a href="./blog/emotional-intelligence.html">Read More</a>
+          </div>
+          <div class="box">
+            <img
+              class=".img-responsive"
+              src="./blog/images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg"
+            />
+            <h3>Html and CSS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse non nisl at risus dapibus laoreet id id mauris. Aenean
+              sodales a purus non gravida. Aenean egestas, risus a scelerisque
+              commodo, risus turpis bibendum arcu, bibendum vulputate mi orci
+              sit amet lacus. Duis nec accumsan est, vitae scelerisque augue.
+            </p>
+            <a href="./blog/html-css.html">Read More</a>
+          </div>
+          <div class="box">
+            <img
+              src="./blog/images/aleza-van-der-werff-pvNIRh4pNcQ-unsplash.jpg"
+            />
+            <h3>The Story of Te Houtaewa</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse non nisl at risus dapibus laoreet id id mauris. Aenean
@@ -56,9 +101,9 @@
             </p>
             <a href="./blog/te-houtaewa-template.html">Read More</a>
           </div>
-
           <div class="box">
-            <a href="#">CSS - what is padding</a>
+            <img src="./blog/images/altumcode-dMUt0X3f59Q-unsplash.jpg" />
+            <h3>JS Fundamentals</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse non nisl at risus dapibus laoreet id id mauris. Aenean
@@ -66,22 +111,7 @@
               commodo, risus turpis bibendum arcu, bibendum vulputate mi orci
               sit amet lacus. Duis nec accumsan est, vitae scelerisque augue.
             </p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="box">
-            <a href="#">CSS - what is margin? </a>
-            <p>Lorem ipsum dolor, sit amet</p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="box">
-            <a href="learning-plan.html">Learning path </a>
-            <p>Lorem ipsum dolor, sit amet</p>
-            <a href="learning-plan.html">Read More</a>
-          </div>
-          <div class="box">
-            <a href="identity-values.html">Identity values </a>
-            <p>Lorem ipsum dolor, sit amet</p>
-            <a href="identity-values.html">Read More</a>
+            <a href="./blog/javascript-dom.html">Read More</a>
           </div>
         </div>
       </section>
