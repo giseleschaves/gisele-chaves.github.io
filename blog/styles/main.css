@@ -7,23 +7,25 @@
   background-color: #ececec;
 }
 
+/* HMTL Elements styling */
 h1 {
   font-size: 15pt;
-  padding: 15px;
+  margin-bottom: 5px;
 }
 
 h2 {
   font-size: 12pt;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 h3 {
   font-size: 10pt;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 p {
-  padding: 5px;
+  padding-bottom: 5px;
+  line-height: 1.3rem;
 }
 
 a {
@@ -44,114 +46,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
+section {
+  padding: 3rem 0 2rem;
+  margin: 2rem;
+}
+
+/* --- Haeader Styling --- */
+
 #main-header {
   display: flex;
   justify-content: space-between;
   margin: 10px;
   max-width: 1200px;
-}
-
-#secundary-header {
-  display: flex;
-  font-size: 14px;
-  height: 70px;
-  border: 1px solid #dfdfe5;
-  padding-left: 5px;
-  position: sticky;
-  top: 0;
-  box-shadow: 1px 1px 5px 0.1px #dadce0;
-  margin-bottom: 20px;
-  z-index: 0;
-}
-
-#secundary-header div {
-  margin: auto;
-}
-#secundary-header span {
-  font-weight: 900;
-}
-
-#secundary-options {
-  border-left: 1px solid #dfdfe5;
-  padding-left: 10px;
-}
-
-#secundary-options li {
-  display: inline;
-  padding: 5px;
-}
-
-#blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-}
-.box {
-  width: 350px;
-  margin: 20px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.img-responsive {
-  max-width: 100%;
-  max-height: 50px;
-  height: auto;
-}
-
-@media (max-width: 1250px) {
-  .box {
-    width: 600px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .box {
-    width: 70%;
-  }
-}
-
-@media (max-width: 550px) {
-  .box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-  background-color: #ececec;
-}
-
-h1 {
-  font-size: 15pt;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
 }
 
 #secundary-header {
@@ -182,7 +92,7 @@ body {
   text-decoration: underline;
 }
 
-/* secondary bar */
+/* Secondary bar Styling */
 .secondary-bar {
   overflow: hidden;
   background-color: #333;
@@ -205,7 +115,7 @@ body {
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown .drop-option {
   font-size: 16px;
   border: none;
   outline: none;
@@ -216,8 +126,8 @@ body {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
+
+.dropdown:hover .drop-option {
   background-color: rgb(255, 174, 0);
 }
 
@@ -251,22 +161,50 @@ body {
   display: block;
 }
 
-/* ------------------------ */
+/* --- Blog Styling ---*/
 
-#blog {
-  display: flex;
+.blog {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  gap: 1.5rem;
 }
-.box {
-  width: 350px;
-  margin: 20px;
-  padding: 30px;
+
+.blog-box {
+  box-shadow: 0 4px 14px hsl(355deg, 25% 15% / 10%);
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+
+.blog-img {
+  height: 250px;
+  object-fit: cover;
+}
+.category {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.blog-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.blog-date {
   display: flex;
-  flex-direction: column;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.blog-description {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  margin: 5px 0 10px;
+  overflow: hidden;
 }
 
 .img-responsive {
@@ -275,24 +213,26 @@ body {
   height: auto;
 }
 
+/* Media query */
+
 @media (max-width: 1250px) {
-  .box {
+  .blog-box {
     width: 600px;
   }
 }
 
 @media (max-width: 1100px) {
-  .box {
+  .blog-box {
     width: 70%;
   }
 }
 
 @media (max-width: 550px) {
-  .box {
+  .blog-box {
     margin: 20px 10px;
     width: 100%;
   }
-  #blog {
+  .blog-box {
     padding: 20px;
   }
 }
