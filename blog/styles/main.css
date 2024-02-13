@@ -213,6 +213,14 @@ section {
   height: auto;
 }
 
+.question {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.answer-list {
+  list-style: disc;
+  margin-left: 20px;
+}
 /* Media query */
 
 @media (max-width: 1250px) {
